@@ -1,0 +1,357 @@
+/* Define a fonte a ser utilizada */
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+/***************************************** Formatações Gerais *****************************/
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #1e1e2a;
+    background: linear-gradient(to bottom, blue,lightblue ,white,#ccc);
+    background-repeat: no-repeat;
+    background-size: 100% 200%; /* aumenta a altura para 200% */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#projetos #navegacao .projetos a,
+#contato #navegacao .contato a{
+    color: white;
+    background: rgb(0, 132, 255);
+    border: solid white 1px;
+  }
+
+/* Define o estilo da barra de navegação */
+ul {
+    border: 1px solid #ccc;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center; /* centraliza os elementos */
+    margin-bottom: -20px;
+}
+
+/* Define o estilo da barra de navegação superior */
+#topo ul {
+    margin-top: 0px;
+    background: #1a03b1;
+    float: right;
+    width: 100%; /* ocupa toda a largura disponível */
+    position: fixed; /* fixa o menu no topo */
+    top: 0; /* posiciona o menu no topo */
+    z-index: 1; /* mantém o menu acima de outros elementos */
+}
+
+#container {
+    position: relative;
+}
+
+/* Define o estilo do elemento que vem logo abaixo da barra de navegação */
+/* Adicione um padding-top com o mesmo valor da altura da barra de navegação */
+#cabecalho {
+    padding-top: 50px; /* ajuste o valor conforme necessário */
+}
+
+.cabecalho-texto {
+    height: 150px; /* altura desejada do parágrafo */
+    width: 850px;
+    align-items: center;
+    text-align: justify;
+  }
+
+  /* Define o estilo de cada item da barra de navegação */
+#topo ul li {
+    display: inline-block; /* alinha os elementos em linha */
+}
+
+/* Define o estilo do link da barra de navegação */
+#topo ul a {
+    font-size: 1.5em;
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height: 1.1em;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Define o estilo do primeiro link da barra de navegação */
+#topo ul .primeiro a {
+    background: none;
+}
+
+/* Define o estilo do link da barra de navegação quando o mouse está em cima */
+#topo ul a:hover {
+  color: white;
+  background: rgb(0, 132, 255);
+}
+
+/* Define o estilo do elemento de navegação */
+#navegacao {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 0px;
+    align-items: center;
+}
+
+#rodape {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #1a03b1;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+
+/******************************* Formatações Index *************************************/
+/* Define o estilo do título principal do cabeçalho */
+h1.sobre_mim{
+    display: inline;
+    margin-top: 220px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: block;
+}
+
+h2.sobre_mim {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: -15px;
+}
+
+
+/* Define o estilo da imagem dentro do container */
+img.imagem-sobre {
+    float: right;
+    margin-left: 20px; /* adiciona um espaçamento entre a imagem e o texto */
+    margin-top: 50px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    margin-right: -400px;
+    margin-top: 150px;
+    margin-left: 450px;
+    margin-bottom: 40px;
+    display: inline;
+    float: left;
+    line-height: 20px;
+ 
+  }
+  .social-media a i {
+    font-size: 50px;
+  }
+  
+  .social-media #linkedin a{
+    color: white;
+    background: #1223e3;
+    border: solid #ccc 1px;
+    border-radius: 15px;
+  }
+  
+  .social-media #linkedin a:hover{
+    color: #1223e3;
+    background: white;
+  }
+  
+  .social-media #github a{
+    color: white;
+    background: black;
+    border: solid #ccc 1px;
+    border-radius: 15px;
+  }
+  
+  .social-media #github a:hover{
+    color: black;
+    background: white;
+  }
+  
+  .social-media #instagram a{
+    color: white;
+    background: linear-gradient(to bottom, #833AB4, #E1306C, #FD1D1D, #FDB813);
+    border: solid #ccc 1px;
+    border-radius: 15px;
+  }
+  
+  .social-media #instagram a:hover{
+    color: white;
+    background: linear-gradient(to bottom, #FDB813, #FD1D1D, #E1306C, #833AB4);
+  }
+  
+  /******************************* Formatações Sobre *************************************/
+  #container p {
+    color: black;
+    font-weight: bold;
+    margin-top: -30px;
+    display: inline-block;
+    font-size: 24px;
+    padding: 50px; 
+    color: black;
+    width: 450px;
+    text-align: justify;
+  }
+  
+  #cabecalho_img p{
+    color: black;
+    width: 700px;
+    margin-top: -25px;
+    margin-left: 300px;
+    font-size: 20px;
+  }
+  
+  #cabecalho_img img.centralizar{
+    width: 150%;
+    margin-left:500px;
+  }
+  #cabecalho_img {
+      width: 20%; 
+      align-items: auto;
+      margin-right: 500px;
+    }
+  
+  #cabecalho_img button.botao{
+    margin-top: 10px;
+    margin-left: 625px;
+   
+  }
+  
+  #cabecalho_img button.botao{
+    background: #1223e3;
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+
+  }
+
+  #cabecalho_img button.botao:hover{
+    color: white;
+    background-color: rgb(0, 132, 255);
+    border-radius: 10px;
+  }
+   
+
+/******************************* Formatações Projetos *************************************/
+body.carrossel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+}
+
+h1.projetos-carrossel{
+  margin-top: 70px;
+  margin-left: 160px;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+#Carrossel {
+  box-shadow: 2px 2px 4px black;
+  overflow-x: scroll;
+  overflow-y: auto;
+  height: 600px;
+  width: 600px;
+  background: linear-gradient(to bottom, blue, lightblue, white, #ccc);
+}
+
+.container-carrossel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+img.imagem-carrossel{
+  object-fit: scale-down;
+  height: 620px;
+  width: 620px;
+  border: solid white 1px;
+  float: block;
+}
+
+#botao-direita {
+  background: #CCC;
+  font-size: 60px;
+  color: rgb(0, 132, 255);
+  border: solid 1px white;
+  position: absolute;
+  top: 50%;
+  right: -45px;
+}
+
+#botao-esquerda {
+  position: absolute; /* adiciona posição absoluta para que seja posicionado de forma absoluta em relação ao elemento pai */
+  background: #CCC;
+  font-size: 60px;
+  margin-left: -45px;
+  top: 50%; /* define a posição vertical em relação ao topo do elemento pai */
+  transform: translateY(-50%); /* centraliza verticalmente */
+  color: rgb(0, 132, 255);
+  border: solid 1px white;
+}
+
+
+h2.titulo-carrossel{
+  color: white;
+  margin-inline-start: 200px;
+}
+
+/*********************************** Formatações Contato ************************************/
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+  button.formulario {
+    background-color: #1a03b1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button.formulario:hover {
+    background-color: #1223e3;
+  }
+
